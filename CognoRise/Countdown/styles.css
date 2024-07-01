@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(45deg, #ff8a00, #e52e71);
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.countdown-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.countdown-header {
+    margin-bottom: 20px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.input-container {
+    margin: 10px;
+}
+
+input[type="date"],
+input[type="time"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.action-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    color: aliceblue;
+}
+
+.action-btn:hover {
+    color: white;
+}
+
+.start-btn {
+    background: linear-gradient(45deg, #4CAF50, #388e3c);
+    margin-right: 10px;
+}
+
+.start-btn:hover {
+    background: linear-gradient(45deg, #388e3c, #4CAF50);
+}
+
+.stop-btn {
+    background: linear-gradient(45deg, #f44336, #c62828);
+    margin-right: 10px;
+}
+
+.stop-btn:hover {
+    background: linear-gradient(45deg, #c62828, #f44336);
+}
+
+.reset-btn {
+    background: linear-gradient(45deg, #008CBA, #005073);
+}
+
+.reset-btn:hover {
+    background: linear-gradient(45deg, #005073, #008CBA);
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.countdown-timer {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 40px;
+    color: #333;
+}
+
+#analog-clock {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+#digital-clock {
+    display: inline-block;
+}

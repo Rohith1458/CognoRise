@@ -1,0 +1,72 @@
+body {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom right, #ff0000, #2b00ff);
+    color: aliceblue;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    background: linear-gradient(to bottom right, #2a0ff1, #fd0ba4);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.container h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+input[type="number"],
+input[type="submit"],
+select {
+    padding: 12px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    width: 220px;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    outline: none;
+}
+
+input[type="submit"] {
+    background: linear-gradient(to right, #fc11b9, #1100ff);
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background: linear-gradient(to right, #1500ff, #ff00c3);
+}
+
+select {
+    width: 150px;
+    padding: 8px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 10 5" xmlns="http://www.w3.org/2000/svg"><path d="M 5 0 L 0 5 L 10 5 Z" fill="%23007bff"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 8px;
+    transition: border-color 0.3s ease;
+}
+
+select:hover {
+    border-color: #007bff;
+}
+
+select:focus {
+    outline: none;
+    border-color: #007bff;
+} 

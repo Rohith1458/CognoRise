@@ -1,0 +1,107 @@
+/* Applying Montserrat font to placeholders */
+::placeholder {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(to right, #ff00d4, #2200ff);
+    color: #fff;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    max-width: 90%;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.converter {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input[type="number"],
+select,
+button {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 18px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input[type="number"] {
+    font-size: 20px;
+    height: 50px;
+}
+
+.currency-selectors {
+    display: flex;
+    gap: 15px;
+}
+
+.currency-selectors select {
+    flex: 1;
+    height: 50px;
+    appearance: none;
+    background-color: #f8f8f8;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 12px;
+    font-size: 18px;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, border 0.3s;
+}
+
+.currency-selectors select:hover {
+    background-color: #e8e8e8;
+    border-color: #bbb;
+}
+
+.currency-selectors select:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+button {
+    background-color: #2b00ff;
+    color: #ffffff;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s, transform 0.2s;
+    height: 50px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+button:hover {
+    background-color: #e217d1;
+    transform: scale(1.05);
+}
+
+.result {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1.4em;
+    color: #333;
+    font-weight: 500;
+}
